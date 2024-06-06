@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_color"
+    android:orientation="vertical"
+    tools:context=".MainNewActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="@color/app_color"
+        app:cardElevation="@dimen/dp_10">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_40"
+            android:layout_marginBottom="@dimen/dp_10">
+
+            <ImageView
+                android:id="@+id/iv_menu"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="@dimen/dp_8"
+                android:padding="@dimen/dp_5"
+                android:src="@drawable/english_game" />
+
+            <TextView
+                android:id="@+id/tv_base_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_toRightOf="@+id/iv_menu"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/app_main"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/dp_16"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="@dimen/dp_7"
+                    android:src="@drawable/star_color_topics" />
+
+                <TextView
+                    android:id="@+id/text_star"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_20"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/iv_diamond"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="@dimen/dp_8"
+                    android:src="@drawable/diamond" />
+
+                <TextView
+                    android:id="@+id/text_diamond"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_20"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/app_color"
+        app:itemTextColor="@color/menu_text_selector"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_navigation_menu" />
+
+</LinearLayout>

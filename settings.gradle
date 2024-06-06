@@ -1,0 +1,5 @@
+include ':app'
+rootProject.name = "LearnChinese"
+include ':lib_deo'
+include ':lib_base'
+include ':lib_com'

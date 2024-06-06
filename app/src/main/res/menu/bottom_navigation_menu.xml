@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/menu_home_select"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/menu_test"
+        android:icon="@drawable/menu_test_select"
+        android:title="Test" />
+
+    <item
+        android:id="@+id/menu_award"
+        android:icon="@drawable/menu_award_select"
+        android:title="Award" />
+
+    <item
+        android:id="@+id/menu_ranking"
+        android:icon="@drawable/menu_statistics_select"
+        android:title="Ranking" />
+
+    <item
+        android:id="@+id/menu_set"
+        android:icon="@drawable/menu_setting_select"
+        android:title="Setting" />
+</menu>

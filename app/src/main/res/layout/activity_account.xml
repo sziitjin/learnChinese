@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountActivity">
+
+    <EditText
+        android:id="@+id/et_account"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_55"
+        android:layout_marginStart="@dimen/dp_15"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="@dimen/dp_15"
+        android:background="@drawable/sdk_all_round_layout"
+        android:drawableRight="@mipmap/icon_close"
+        android:hint="@string/hint_email"
+        android:maxLength="20"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingEnd="18dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="#939393"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_account"
+        android:layout_marginLeft="25.5dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/account_max_len"
+        android:textColor="#ff777777"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="@dimen/dp_250"
+        android:layout_height="@dimen/dp_50"
+        android:layout_below="@id/et_account"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="76dp"
+        android:background="@drawable/sdk_btn_bg"
+        android:text="@string/save"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_16" />
+</RelativeLayout>

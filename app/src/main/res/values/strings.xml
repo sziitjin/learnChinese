@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Learn Chinese Tocn</string>
+    <string name="setting_share_friend">Share with friends</string>
+    <string name="setting_good_comment">Five-star rating</string>
+    <string name="setting_appreciate">Appreciate the developer</string>
+    <string name="url_learn_chinese">https://play.google.com/store/apps/details?id=com.learn.chinese.sk</string>
+    <string name="url_privacy_learn_chinese">http://sirl.cn/api/en/privacy.html</string>
+
+    <string name="nick_name">Nickname</string>
+    <string name="input_nick_name">Enter your nickname</string>
+    <string name="nickname_max_len">Nickname should be 10 characters at most.</string>
+    <string name="nickname_not_null">Please enter your nickname.</string>
+    <string name="save">Save</string>
+
+    <string name="account">Account</string>
+    <string name="account_not_null">Please enter your account.</string>
+    <string name="hint_email">Enter your email address</string>
+    <string name="account_max_len">Email should be 20 characters at most.</string>
+    <string name="hint_email_1">Please enter a valid email address.</string>
+</resources>

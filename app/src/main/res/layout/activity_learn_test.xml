@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_16"
+    tools:context=".LearnTestActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.learn.chinese.view.ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_30"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/text_progress"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="0/10"
+            android:textColor="@color/item2_color"
+            android:textSize="@dimen/sp_20" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginBottom="@dimen/dp_40">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="15dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:onClick="toPlay"
+            app:cardBackgroundColor="@color/device_item_color"
+            app:cardCornerRadius="@dimen/dp_15"
+            app:cardElevation="@dimen/dp_5">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:minWidth="@dimen/dp_200"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tv_zh_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="数字"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_24" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:src="@drawable/ic_translate" />
+
+                <TextView
+                    android:id="@+id/tv_en_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="Zero"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp_18" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@drawable/circle_background"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_speaker_on"
+                    app:tint="@color/gray" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_margin="15dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="clickItem1"
+                app:cardBackgroundColor="@color/device_item_color"
+                app:cardCornerRadius="@dimen/dp_15"
+                app:cardElevation="@dimen/dp_5">
+
+                <ImageView
+                    android:id="@+id/iv_item1"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:padding="@dimen/dp_20"
+                    android:src="@drawable/fruit1" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_margin="15dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="clickItem2"
+                app:cardBackgroundColor="@color/device_item_color"
+                app:cardCornerRadius="@dimen/dp_15"
+                app:cardElevation="@dimen/dp_5">
+
+                <ImageView
+                    android:id="@+id/iv_item2"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:padding="@dimen/dp_20"
+                    android:src="@drawable/fruit2" />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_right"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_100"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_vote"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

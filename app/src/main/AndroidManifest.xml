@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.learn.chinese">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <application
+        android:name=".base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <!-- android:process=":account"-->
+        <activity
+            android:name=".AccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NicknameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainNewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AwardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LearnTestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LearnItemActivity"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name=".util.SkProvider"
+            android:authorities="com.sk.provider"
+            android:exported="true" />
+    </application>
+
+</manifest>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lib.deo">
+
+    <application>
+        <activity android:name=".GSYVideoActivity"></activity>
+        <activity android:name=".ExoPlayerActivity" />
+        <activity android:name=".MediaTextureActivity" />
+        <activity android:name=".MediaSurfaceActivity" />
+        <activity android:name=".VideoViewActivity" />
+        <activity android:name=".MusicActivity" />
+        <activity android:name=".DeoActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_color"
+    android:overScrollMode="never"
+    android:padding="@dimen/dp_16"
+    android:scrollbars="none"
+    tools:context=".fragment.AwardFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="星星学者（Star Scholar）"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_18"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="15dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="@color/star_item_color"
+            app:cardCornerRadius="@dimen/dp_15"
+            app:cardElevation="@dimen/dp_5">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:padding="@dimen/dp_16">
+
+                <ImageView
+                    android:id="@+id/img_star3"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_crown_stars_g" />
+
+                <ImageView
+                    android:id="@+id/img_star1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_above="@+id/lin_progress"
+                    android:layout_marginBottom="@dimen/dp_16"
+                    android:src="@drawable/ic_medal_stars_1_g" />
+
+                <ImageView
+                    android:id="@+id/img_star2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_above="@+id/lin_progress"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/dp_16"
+                    android:src="@drawable/ic_medal_stars_1_g" />
+
+                <LinearLayout
+                    android:id="@+id/lin_progress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical">
+
+                    <com.learn.chinese.view.ProgressBar
+                        android:id="@+id/progress_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_15"
+                        app:progressColor="@color/item_color"
+                        app:radiusSize="@dimen/dp_3"
+                        app:roundColor="@color/gray" />
+
+                    <TextView
+                        android:id="@+id/text_progress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:gravity="right"
+                        android:text="Star 0/10"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_16" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_16"
+            android:text="钻石学者（Diamond Scholar）"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_18"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="15dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="@color/star_item_color"
+            app:cardCornerRadius="@dimen/dp_15"
+            app:cardElevation="@dimen/dp_5">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:padding="@dimen/dp_16">
+
+                <ImageView
+                    android:id="@+id/img_diamond3"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_crown_category_g" />
+
+                <ImageView
+                    android:id="@+id/img_diamond1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_above="@+id/lin_progress_diamond"
+                    android:layout_marginBottom="@dimen/dp_16"
+                    android:src="@drawable/ic_medal_category_1_g" />
+
+                <ImageView
+                    android:id="@+id/img_diamond2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_above="@+id/lin_progress_diamond"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/dp_16"
+                    android:src="@drawable/ic_medal_category_1_g" />
+
+                <LinearLayout
+                    android:id="@+id/lin_progress_diamond"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical">
+
+                    <com.learn.chinese.view.ProgressBar
+                        android:id="@+id/progress_bar_diamond"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_15"
+                        app:progressColor="@color/item_color"
+                        app:radiusSize="@dimen/dp_3"
+                        app:roundColor="@color/gray" />
+
+                    <TextView
+                        android:id="@+id/text_progress_diamond"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:gravity="right"
+                        android:text="Diamond 0/10"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_16" />
+
+                </LinearLayout>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>
